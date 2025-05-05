@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <div class="logo">🍽️</div>
+            <h1>Delicious Dishes</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a meal or ingredient...">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Discover Amazing Recipes!</h2>
+                <p>Find your next favorite meal with our easy-to-use recipe finder.</p>
+                <button id="heroSearchButton">Search Recipes</button>
+            </div>
+        </div>
+
+        <div id="searchResults" class="search-results">
+        </div>
+
+        <div id="loadingSkeleton" class="food-loader" style="display: none;">
+            <div class="plate">
+                <div class="fork"></div>
+                <div class="meatball"></div>
+            </div>
+        </div>
+
+        <div id="recipeDetailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="recipeTitle"></h2>
+                <div id="recipeInstructions"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Recipe Finder - Powered by TheMealDB</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
