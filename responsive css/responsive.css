@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo-title {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .search-bar input[type="text"] {
+        flex-grow: 1;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .search-results {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .modal-content {
+        margin: 20% auto;
+    }
+}
